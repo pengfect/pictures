@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for x in images %}
+    <div>
+        <a href="/profile/{{x.user_id}}/">{{x.user.username}}</a>
+        <a href="/detail/{{x.id}}/">
+        <img src="{{x.url}}">
+        </a>
+    </div>
+    {% endfor %}
+</body>
+</html>
