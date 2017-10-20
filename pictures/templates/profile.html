@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="/">返回主页</a>
+    <a>{{user.username}}</a>
+    {% for x in user.image%}
+        <img src="{{x.url}}">
+    {% endfor %}
+</body>
+</html>
